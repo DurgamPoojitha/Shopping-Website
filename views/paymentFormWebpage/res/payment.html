@@ -1,0 +1,67 @@
+<html><head>
+    <title>Payment page frame</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+   </head>
+    <body>
+
+  <div class="container1">
+      <div class="personalInfo">
+        <i class="fa fa-user icon" ></i>
+            <h2>Personal Information<hr></h2>
+            <form>
+                <input type="text" placeholder=" Your Name" id="name"><br><br>
+              <div class="flex">
+                <input type="email" id="email" name="one" placeholder=" Email">
+                <input type="number" id="number" name="one" placeholder=" Phone Number">
+              </div>
+
+        </form></div>
+
+     <div class="paymentInfo">
+           <i class="fa fa-credit-card icon" ></i>
+           <h2>Payment Methods</h2>
+           <hr>
+            
+            <div class="radio">
+               <input type="radio" id="htm" name="options" value="htm">
+               <label for="htm"> Cash On Delivery</label>
+              
+               <input type="radio" id="bank" name="options" value="bank">
+               <label for="bank"> Credit or Debit</label>
+               
+            </div><br>
+
+                <input type="text" id="Cardholder" placeholder=" Cardholder Name" ><br><br>
+                
+                <input type="number" id="CardNumber" placeholder=" Card Number" ><br><br>
+              <div class="ip">
+                <input type="datetime" placeholder="Exp Date" id="Exp">
+                <input type="number" id="CVC" placeholder=" CVC" >
+              </div>
+     </div>
+
+
+
+
+       <div class="personalInfo">
+        <i class="fa fa-home icon"></i>
+             <h2>Shipping Address<hr></h2>
+              <div class="flex">
+                <input type="text" id="address" placeholder=" Address">
+                <input type="text" id="Postal" placeholder=" Postal Code"></div><br>
+              <div class="flex">
+                <input type="text" placeholder="City" id="city"  >
+                <input type="number" id="country" placeholder=" Country">
+              </div>
+        </div>
+
+     
+ </div>
+
+ 
+    <iframe src="cart.html" frameborder="0" class="cart"></iframe>
+    <input type="button" value="Pay With QR code" class="qr" onclick="window.open('../../qrPayPge/index.html')">
+
+</body>
+</html>

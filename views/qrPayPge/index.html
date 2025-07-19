@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SCAN HERE</h1>
+        <div class="qr-code-container">
+            <div id="qrcode"></div>
+        </div>
+        <div class="amount-container">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter the amount" name="cost" readonly>
+        </div>
+        <button id="payButton">Pay Now</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

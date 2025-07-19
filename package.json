@@ -1,0 +1,14 @@
+{
+  "name": "shopping-website",
+  "version": "1.0.0",
+  "description": "One stop solution for all your shopping needs",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "D.Poojitha",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^30.0.6"
+  }
+}

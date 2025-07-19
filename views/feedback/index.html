@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>User Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+
+<body> 
+    <main> 
+        <div class="card"> 
+            <h1>Feedback</h1> 
+            <form action="#"> 
+                <h3>How was your experience?</h3>
+                <div class="rating">
+                    <div class="terrible">
+                        <input type="radio" id="terrible" name="rating" value="Terrible">
+                        <label for="terrible"><span>😞</span></label>
+                        <h3>Terrible</h3>
+                    </div>
+                    <div class="bad">
+                        <input type="radio" id="bad" name="rating" value="Bad">
+                        <label for="bad"><span>😐</span></label>
+                        <h3>Bad</h3>
+                    </div>
+                    <div class="okay">
+                        <input type="radio" id="okay" name="rating" value="Okay">
+                        <label for="okay"><span>🙂</span></label>
+                        <h3>Okay</h3>
+                    </div>
+                    <div class="good">
+                        <input type="radio" id="good" name="rating" value="Good">
+                        <label for="good"><span>😀</span></label>
+                        <h3>Good</h3>
+                    </div>
+                    <div class="excellent">
+                        <input type="radio" id="excellent" name="rating" value="Excellent">
+                        <label for="excellent"><span>😍</span></label>
+                        <h3>Excellent</h3>
+                    </div>
+                </div>
+
+                <h4>Tell us about what you liked or disliked about your experience...</h4>
+                <div class="form-group">
+                    <textarea name="reasons" id="reasons" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button id="submitBtn">Submit</button>
+                    <button type="reset">Cancel</button>
+                </div>
+            </form> 
+        </div> 
+    </main> 
+
+</body> 
+</html>

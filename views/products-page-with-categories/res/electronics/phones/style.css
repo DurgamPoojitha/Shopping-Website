@@ -1,0 +1,199 @@
+:root {
+    --background-color: #1C1D1F;
+    --foreground-color: #303235;
+    --text-color: #ffffff;
+    --button-bg-color: rgba(255, 255, 255, 0.85);
+    --button-text-color: #1C1D1F;
+    --placeholder-text: rgba(255, 255, 255, 0.5);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+*::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: var(--background-color);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--foreground-color);
+    border-radius: 1rem;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: var(--placeholder-text);
+}
+
+@font-face {
+    font-family: 'customFont';
+    src: url('../font.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'customFont';
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+
+body {
+    min-width: 700px;
+    height: 100dvh;
+    background-color: var(--background-color);
+    overflow: clip;
+}
+
+.side-menu img {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.page {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 200ms linear;
+}
+
+.page:hover {
+    background-color: var(--background-color);
+}
+
+.page-selected {
+    background-color: var(--background-color);
+}
+
+.side-menu {
+    width: 4rem;
+    height: 100%;
+    background-color: var(--foreground-color);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.top-menu{
+    width: calc(100% - 4rem);
+    height: 4rem;
+    background-color: var(--background-color);
+    border-bottom: 3px solid var(--foreground-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0px;
+    left: 4rem;
+}
+
+.top-menu p {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+
+.name {
+    font-size: 1.2rem;
+    padding: 1rem 0rem .3rem 0rem;
+}
+
+.cost {
+    font-size: 1rem;
+    padding-bottom: calc(1rem - 0.3rem);
+}
+
+.product {
+    scale: 0.85;
+    width: fit-content;
+    height: fit-content;
+    padding: .3rem .3rem .3rem .3rem;
+    background-color: var(--foreground-color);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 50px 0px #000000;
+    text-align: center;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.product:hover {
+    translate: 0px -20px;
+    box-shadow: 0px 30px 50px 0px #000000;
+}
+
+
+.mainFrame {
+    width: calc(100vw - 4rem);
+    height: calc(100vh - 4rem);
+    position: relative;
+    left: 4rem;
+    top: 4rem;
+    overflow-y: auto;
+    overflow-x: clip;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+}
+
+#home:hover::after {
+    position: absolute;
+    left: 2rem;
+    width: 6rem;
+    height: 1rem;
+    content: "Go to main page";
+    font-size: 11px;
+    display: block;
+    z-index: 3;
+    background-color: var(--background-color);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+
+#shop:hover::after {
+    position: absolute;
+    left: 2rem;
+    width: 6rem;
+    height: 1rem;
+    content: "Shop Products";
+    font-size: 11px;
+    display: block;
+    z-index: 3;
+    background-color: var(--background-color);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+
+#pay:hover::after {
+    position: absolute;
+    left: 2rem;
+    width: 6rem;
+    height: 1rem;
+    content: "Checkout items";
+    font-size: 11px;
+    display: block;
+    z-index: 3;
+    background-color: var(--background-color);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #000000;
+}

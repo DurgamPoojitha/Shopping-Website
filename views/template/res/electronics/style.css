@@ -1,0 +1,122 @@
+:root {
+    --background-color: #1C1D1F;
+    --foreground-color: #303235;
+    --text-color: #ffffff;
+    --button-bg-color: rgba(255, 255, 255, 0.85);
+    --button-text-color: #1C1D1F;
+    --placeholder-text: rgba(255, 255, 255, 0.5);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: var(--background-color);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--foreground-color);
+    border-radius: 1rem;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: var(--placeholder-text);
+}
+
+@font-face {
+    font-family: 'customFont';
+    src: url('../font.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'customFont';
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .product {
+        scale: .8;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    body {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product {
+        scale: .8;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    .product {
+        scale: 1;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .product {
+        scale: .8;
+    }
+}
+
+body {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    row-gap: 5rem;
+    justify-items: center;
+}
+
+.name {
+    font-size: 20px;
+    padding: 1rem 0rem .3rem 0rem;
+}
+
+.cost {
+    font-size: 16px;
+    padding-bottom: calc(1rem - 0.3rem);
+}
+
+.product {
+    width: fit-content;
+    height: fit-content;
+    padding: .3rem .3rem .3rem .3rem;
+    background-color: var(--foreground-color);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 50px 0px #000000;
+    text-align: center;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.product:hover {
+    translate: 0px -20px;
+    box-shadow: 0px 30px 50px 0px #000000;
+}

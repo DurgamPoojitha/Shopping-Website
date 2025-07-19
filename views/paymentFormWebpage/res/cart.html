@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>
+            cart items
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+   
+    <body onload="additems()">
+        
+            <h1 class="cart">Item
+                <hr><hr>
+            </h1>
+
+    <script>
+        function additems() {
+            const cart = document.querySelector(".cart");
+            if (parseInt(sessionStorage.getItem("items")) >= 1) {            
+                for(let i=0; i < parseInt(sessionStorage.getItem("items")); i++) {
+
+                    if(sessionStorage.getItem(`item${i+1}`) != null) {
+                        let div = document.createElement("div");
+                        div.className = "cartItems";
+                        let p = document.createElement("p");
+                        p.innerHTML = sessionStorage.getItem(`item${i+1}`);
+                        let h6 = document.createElement("h6");
+                        h6.innerHTML = "&times";
+                        h6.className = "clsbtn";
+                        h6['onclick'] = function() {
+                            sessionStorage.removeItem(`item${i+1}`);
+                            while (document.getElementsByClassName("cartItems").length != 0) {
+                                for(item of document.getElementsByClassName("cartItems")) {
+                                    item.remove();
+                                }
+                            }
+                            additems();
+                        };
+                        div.appendChild(p);
+                        div.appendChild(h6);
+                        cart.appendChild(div);
+                        console.log(div);
+                    }
+                }
+            } else {
+                console.log("No products in cart");
+            }
+        }
+
+        function deleteItem(element) {
+            elem = element.parentNode;
+            elem.remove();
+            console.log();
+        }
+    </script>
+    </body>
+    </html>
