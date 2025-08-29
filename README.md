@@ -1,60 +1,59 @@
 🛍️ User Interface Design – Shopping Website
 
-A shopping website with a simple and interactive user interface, built using HTML, CSS, JavaScript, and Electron. The application provides a seamless shopping experience with categorized products, auto-add to cart functionality, and a QR code-based payment page.
+A desktop shopping application built using HTML, CSS, JavaScript, and Electron.
+This project demonstrates a clean and interactive User Interface Design for a shopping platform where users can browse products, add them automatically to the cart by clicking, and proceed with QR code–based payments.
 
-🚀 Features
+✨ Features
 
-Login Page for authentication.
+Login Page – Simple login interface for authentication.
 
-Shopping Page with categories:
+Shopping Page – Browse products by categories:
 
-Groceries
+🥦 Groceries
 
-Furniture
+🪑 Furniture
 
-Electronics
+💻 Electronics
 
 Laptops
 
 Mobile Phones
 
-Clothes
+👕 Clothes
 
 Shirts
 
 Pants
 
-Furniture
+Auto Add to Cart – Clicking a product automatically adds it to the cart.
 
-Tables
-
-Chairs
-
-Product Selection: Click on a product to automatically add it to the cart.
-
-Payment Page:
+Payment Page –
 
 Displays a QR Code for payment.
 
-Shows total amount of all selected items.
+Shows calculated total amount of selected products.
 
-Includes a payment details page.
+Includes a Payment Details Page for user entry.
 
 🛠️ Tech Stack
 
-Frontend: HTML, CSS, JavaScript
+HTML – Structure
 
-Desktop Runtime: Electron
+CSS – Styling
 
-⚙️ Installation
+JavaScript – Functionality
 
-Clone the repository:
+Electron – Desktop runtime environment
+
+⚙️ Installation & Setup
+
+Clone this repository:
 
 git clone https://github.com/your-username/shopping-website.git
 cd shopping-website
 
 
-Install dependencies:
+Install required dependencies:
 
 npm install
 
@@ -69,17 +68,17 @@ Launch the application.
 
 Login with your credentials.
 
-Navigate through categories (Groceries, Electronics, Clothes, Furniture).
+Browse through categories (Groceries, Furniture, Electronics, Clothes).
 
 Click on a product → It gets auto-added to the cart.
 
-Go to the Payment Page:
+Open the Payment Page:
 
 Scan the QR Code.
 
-Check the calculated total amount.
+View the total amount.
 
-Fill in the payment details to complete checkout.
+Enter payment details to complete checkout.
 
 📂 Project Structure
 shopping-website/
@@ -92,21 +91,23 @@ shopping-website/
 ├── package.json       # Project configuration
 └── README.md          # Documentation
 
+📸 Screenshots
 
+Add sample screenshots of the Login Page, Shopping Page, and Payment Page here.
 
 🔮 Future Enhancements
 
-Add User Registration system.
+Add User Registration & account management.
 
-Improve Cart Management (remove items, update quantity).
+Improve Cart System (remove items, update quantities).
 
 Integrate with a real Payment Gateway.
 
-Add Order History Tracking for users.
+Maintain Order History.
 
 👩‍💻 Authors
 
-Durgam Poojitha, Karthik Saiharsh, Leela Mahalakshmi, Krisnaveni
+Durgam Poojitha,Karthik Saiharsh, Leela Mahalakshmi, Krishnaveni
 
 📜 License
 
